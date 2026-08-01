@@ -3,7 +3,7 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {"kolmiSFCM_ArsenalAddModule","kolmiSFCM_ArsenalLoaderModule","kolmiSFCM_TeleportModule"};
+        units[] = {"kolmiSFCM_ArsenalAddModule","kolmiSFCM_ArsenalLoaderModule","kolmiSFCM_TeleportModule", "kolmiSFCM_VehicleLoadout"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"kolmiSFCM_main"};

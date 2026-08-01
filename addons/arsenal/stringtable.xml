@@ -19,5 +19,11 @@
         <Key ID="str_kolmiSFCM_arsenal_TeleportModule_description">
             <English>Adds a Teleport to commander action to synced objects</English>
         </Key>
+        <Key ID="str_kolmiSFCM_arsenal_VehicleLoadoutModule_Displayname">
+            <English>Vehicle Loadout Module</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_VehicleLoadoutModule_description">
+            <English>Adds configured vehicle loadouts to every vehicle of synced classes</English>
+        </Key>
     </Package>
 </Project>

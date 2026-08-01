@@ -81,4 +81,29 @@ class Logic;
             };
         };
     };
+    class kolmiSFCM_VehicleLoadout: Module_F {
+        scope = 2;
+        side=7;
+        displayName = CSTRING(VehicleLoadoutModule_Displayname);
+        category = QEGVAR(main,CATSFCM);
+        function = QFUNC(VehicleLoadoutModule);
+        isTriggerActivated = 0;
+        functionPriority = 2;
+        isGlobal = 0;
+
+        class ModuleDescription: ModuleDescription {
+            description = CSTRING(VehicleLoadoutModule_description);
+            sync[] = {"LocationArea_F"};
+
+            class LocationArea_F {
+                description[] = {
+					"Sync with vehicles that will get the loadout added to them"
+				};
+                position = 0;
+                optional = 0;
+                duplicate = 1;
+                synced[] = {"AnyVehicle"};
+            };
+        };
+    };
 };
