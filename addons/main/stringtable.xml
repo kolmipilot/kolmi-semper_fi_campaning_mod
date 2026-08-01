@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kolmiSFCM">
+    <Package name="main">
+        <Key ID="str_kolmiSFCM_main_url">
+            <English>https://github.com/kolmipilot/kolmi-semper_fi_campaning_mod</English>
+        </Key>
+    </Package>
+</Project>

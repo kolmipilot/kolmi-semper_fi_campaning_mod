@@ -1,0 +1,12 @@
+name = "kolmipilot's Semper Fi Campaning Mod";
+picture = "USMClogo.paa";
+actionName = "GitHub";
+action = "https://github.com/kolmipilot/kolmi-semper_fi_campaning_mod";
+description = "kolmipilot Semper Fi Campaning Mod";
+logo = "USMClogo.paa";
+logoOver = "USMClogo.paa";
+tooltip = "kolmi Semper Fi Campaning Mod";
+tooltipOwned = "kolmi SEMPER FI CAMPANING MOD";
+overview = "kolmipilot's Semper Fi Campaning Mod";
+author = "kolmipilot";
+overviewPicture = "USMClogo.paa";

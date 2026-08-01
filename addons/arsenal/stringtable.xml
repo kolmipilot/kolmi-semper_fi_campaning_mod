@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kolmiSFCM">
+    <Package name="arsenal">
+        <Key ID="str_kolmiSFCM_arsenal_ArsenalAddModule_Displayname">
+            <English>Arsenal Add Equipment Module</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ArsenalAddModule_description">
+            <English>Adds equipment to the arsenal</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ArsenalLoaderModule_Displayname">
+            <English>Arsenal Loader Module</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ArsenalLoaderModule_description">
+            <English>Loads equipment from the arsenal</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_TeleportModule_Displayname">
+            <English>Teleport to Commander Module</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_TeleportModule_description">
+            <English>Adds a Teleport to commander action to synced objects</English>
+        </Key>
+    </Package>
+</Project>
