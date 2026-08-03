@@ -1,7 +1,7 @@
 /*
  * Author: D.Anderson
  * Moidfied by: kolmipilot
- * Executed locally on each player when mission is started. 
+ * Executed locally on each player when respawned
  * Initiates Custom Wave Respawn System.
  *
  * Arguments:

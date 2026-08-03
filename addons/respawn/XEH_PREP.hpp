@@ -4,3 +4,4 @@ PREP(handleOnPlayerDisconnected);
 PREP(initRespawnPlayer);
 PREP(initRespawnServer);
 PREP(respawnConfModule);
+PREP(addTickets);

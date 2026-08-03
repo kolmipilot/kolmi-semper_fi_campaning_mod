@@ -6,65 +6,19 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"A3_Data_F_Enoch_Loadorder"};
+        requiredAddons[] = {"kolmiSFCM_main", "A3_Data_F_Enoch_Loadorder","A3_Map_Stratis","A3_Map_Altis","A3_Map_Stratis_Scenes_F","A3_Map_Altis_Scenes_F","A3_Map_VR_Scenes_F","A3_Map_Malden_Scenes_F","A3_Missions_F_Orange","A3_Map_Tanoa_Scenes_F"};
         author = "kolmipilot";
         authors[] = {""};
         VERSION_CONFIG;
     };
 };
-
-class Attributes;
 class RscStandardDisplay;
-class RscProgress;
-class RscStructuredText;
 class RscPicture;
-class RscButton;
-class RscShortcutButton;
-class RscButtonMenu;
-class RscButtonMenuOK;
-class RscButtonMenuCancel;
 class RscText;
-class RscVignette;
-class RscDisplayGetReady;
-class RscActiveText;
-class RscListBox;
-class RscListNBox;
-class RscCombo;
-class RscXListBox;
-class RscHTML;
-class RscPictureKeepAspect;
 class RscActivePicture;
-class RscMapControl;
 class RscControlsGroupNoScrollbars;
 class RscControlsGroupNoHScrollbars;
-class RscFrame;
-class RscTitle;
-class CA_Title;
-class RscDebugConsole;
-class RscTrafficLight;
-class RscFeedback;
-class RscMessageBox;
-class RscControlsGroup;
-class RscTextCheckbox;
-class RscDisplayInventory_DLCTemplate;
-class RscEdit;
-class RscCheckBox;
-class RscIGProgress;
-class RscHitZones;
-class RscIGUIText;
-class RscIGUIValue;
-class RscOpticsValue;
-class RscOpticsText;
-class Scrollbar;
-class RscIGUIShortcutButton;
 class RscActivePictureKeepAspect;
-class RscTree;
-class RscXSliderH;
-class RscObject;
-class ctrlMenu;
-class ctrlStaticPicture;
-class RscButtonMenuSteam;
-class RscButtonTextOnly;
 
 // Main Menu
 class RscMainMenuSpotlight: RscControlsGroupNoScrollbars
@@ -72,7 +26,9 @@ class RscMainMenuSpotlight: RscControlsGroupNoScrollbars
 	show = 0;
 	onLoad = "";
 };
-class RscDisplayMain:RscStandardDisplay{
+class RscDisplayMain:RscStandardDisplay {
+    enableDisplay = 0;
+    delete Spotlight;
     class controls {
         class BackgroundSpotlight:RscPicture {
             show=0;
@@ -110,14 +66,14 @@ class RscDisplayMain:RscStandardDisplay{
             show=0;
             onload="";
         };
-        class logo:RscActivePicture {
+        class Logo:RscActivePicture {
             text="\z\kolmiSFCM\addons\mainmenu\USMClogo.paa";
             url="";
-            tooltip="OORAH";
-            onButtonClick="";
+            tooltip="Join Server";
+            onButtonClick=QUOTE(ARR_3([_this,'94.130.68.96',2302]) call (uiNamespace getVariable QQFUNC(join)));
             onload="";
         };
-        class logoApex:logo {
+        class LogoApex:Logo {
             show=0;
             onload="";
             text="";
@@ -137,18 +93,27 @@ class RscDisplayMain:RscStandardDisplay{
         class infoVersion:infoNews {
             show=0;
         };
+        delete Spotlight1;
+		delete Spotlight2;
+		delete Spotlight3;
+		delete BackgroundSpotlightRight;
+		delete BackgroundSpotlightLeft;
+		delete BackgroundSpotlight;
     };
 };
+
+
 class CfgWorlds {
+    
 	class CAWorld;	// External class reference
 	class Altis : CAWorld {
 		cutscenes[] = {"kolmimainmenu"};
 	};
-	
+
 	class Stratis : CAWorld {
 		cutscenes[] = {"kolmimainmenu"};
 	};
-
+    
 	class Enoch : CAWorld {
 		cutscenes[] = {"kolmimainmenu"};
 	};
@@ -164,7 +129,7 @@ class CfgWorlds {
 	class VR : CAWorld {
 		cutscenes[] = {"kolmimainmenu"};
 	};
-
+    
 	initWorld = "VR";
 	demoWorld = "VR";
 };
@@ -173,9 +138,12 @@ class CfgMissions
 {
 	class Cutscenes
 	{
+        
 		class kolmimainmenu // Class referenced in 'cutscenes' property in CfgWorlds
 		{
-			directory = "\z\kolmiSFCM\addons\mainmenu\mainmenu.vr"; // Path to scenario with the scene
+			directory = "z\kolmiSFCM\addons\mainmenu\kolmimenu.vr"; // Path to scenario with the scene
 		};
 	};
 };
+
+#include "CfgEventHandlers.hpp"
