@@ -25,5 +25,23 @@
         <Key ID="str_kolmiSFCM_arsenal_VehicleLoadoutModule_description">
             <English>Adds configured vehicle loadouts to every vehicle of synced classes</English>
         </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ScopeSelectorActions">
+            <English>Scope Selector</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ScopeEotech">
+            <English>Eotech</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ScopeEotechMaginifier">
+            <English>Eotech Magnifier</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ScopeVcog">
+            <English>VCOG</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ScopeAcog">
+            <English>ACOG RMR</English>
+        </Key>
+        <Key ID="str_kolmiSFCM_arsenal_ScopeLeupoldTS30A2">
+            <English>Leupold TS30A2</English>
+        </Key>
     </Package>
 </Project>

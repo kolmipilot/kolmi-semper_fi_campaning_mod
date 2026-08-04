@@ -78,5 +78,5 @@ publicVariable QGVAR(VehicleLoadouts);
         {
             _veh addBackpackCargoGlobal [_x, ((_loadout select 4) select 1) select _forEachIndex];
         } forEach ((_loadout select 4) select 0);
-    }, true, [], true] call CBA_fnc_addClassEventHandler;
+    }, false, [], true] call CBA_fnc_addClassEventHandler;
 } forEach _vehicleLoadouts;
