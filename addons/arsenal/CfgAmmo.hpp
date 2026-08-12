@@ -26,27 +26,27 @@ class CfgAmmo
 	{
 		hit=20;
 		simulation="shotSubmunitions";
-		simulationStep=9.9999997e-005;
-		triggerTime=9.9999997e-005;
-		triggerSpeedCoef[]={0.83999997,1};
+		simulationStep=0.015;
+		triggerTime=0.015;
+		triggerSpeedCoef[]={1,1};
 		submunitionAmmo="kolmiSFCM_ammo_12gD_pellet";
 		submunitionConeType[]=
 		{
 			"poissondisccenter",
-			9
+			5
 		};
-		submunitionConeAngle=0.34999999;
+		submunitionConeAngle=0.35;
 		cartridge="";
 		model="\A3\weapons_f\empty";
-		rhs_cartridge="\rhsusf\addons\rhsusf_weapons\casings\rhs_casing_12ga_buckshot";
+		rhs_cartridge="\rhsusf\addons\rhsusf_weapons\casings\rhs_casing_556x45_m855";
 	};
 	class kolmiSFCM_ammo_12gD_pellet: BulletBase
 	{
 		hit=4.75;
 		indirectHit=0;
 		indirectHitRange=0;
-		caliber=0.23999999;
-		typicalSpeed=403.85999;
+		caliber=0.24;
+		typicalSpeed=670;
 		airFriction=-0.0063399998;
 		class HitEffects
 		{

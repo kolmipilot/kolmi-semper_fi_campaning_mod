@@ -11,7 +11,7 @@
  * Return Value:
  * Nothing
  *
- * Public: Yes/No ?
+ * Public: No ?
  */
 
  params ["_logic", "_units", "_activated"];
@@ -21,10 +21,10 @@ private _tickets = _logic getVariable ["Tickets", 2];
 
 if (count _units == 0) then {_units pushBack _logic;};
 
-if (!_activated) exitWith {};
 if (isServer) then {
 
     missionNamespace setVariable [QGVAR(Tickets), _tickets];
     missionNamespace setVariable [QGVAR(Times), _times];
-
+    publicVariable QGVAR(Tickets);
+    publicVariable QGVAR(Times);
 };
