@@ -24,6 +24,8 @@ private _arsenal = missionNamespace getVariable [QGVAR(arsenal), []];
     if (isNull _x) exitWith {};
     private _loadout = getUnitLoadout [_x, true];
     private _role = roleDescription _x;
+    _role = _role splitString "@";
+    _role = _role select 0;
     _arsenal pushBack [_role, _loadout];
     _roles pushBack _role;
 } forEach (_units);

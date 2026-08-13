@@ -29,7 +29,8 @@ if (!isServer) exitWith {};
     if (!isNull _object) then {
         {
             _x params ["_title", "_loadout"];
-
+            _title = _title splitString "@";
+            _title = _title select 0;
             // Arguments are embedded in the action so every client/JIP player
             // gets the data even if missionNamespace isn't synchronized.
             private _action = [
@@ -41,6 +42,8 @@ if (!isServer) exitWith {};
                     if (_enforceRoles) then {
                         // Caller may only take a loadout whose title matches their own role
                         private _callerRole = roleDescription _caller;
+                        _callerRole = _callerRole splitString "@";
+                        _callerRole = _callerRole select 0;
                         private _allowed = (_title == _callerRole);
 
                         if (_allowed) then {
