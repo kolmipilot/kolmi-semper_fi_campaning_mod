@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #######################
-#  KOLMI_RADIATE Setup Script  #
+#  KOLMI_SFCM Setup Script  #
 #######################
 
 import os
@@ -13,26 +13,26 @@ import winreg
 
 ######## GLOBALS #########
 MAINDIR = "z"
-PROJECTDIR = "kolmir"
+PROJECTDIR = "kolmiSFCM"
 ##########################
 
 def main():
     FULLDIR = "{}\\{}".format(MAINDIR,PROJECTDIR)
     print("""
   ######################################
-  # KOLMI_RADIATE Development Environment Setup #
+  # KOLMI_SFCM Development Environment Setup #
   ######################################
 
-  This script will create your KOLMI_RADIATE dev environment for you.
+  This script will create your KOLMI_SFCM dev environment for you.
 
   Before you run this, you should already have:
     - A properly setup ACE3 Development Environment
 
   If you have not done those things yet, please abort this script in the next step and do so first.
 
-  This script will create two hard links on your system, both pointing to your KOLMI_RADIATE project folder:
-    [Arma 3 installation directory]\\{} => KOLMI_RADIATE project folder
-    P:\\{}                              => KOLMI_RADIATE project folder
+  This script will create two hard links on your system, both pointing to your KOLMI_SFCM project folder:
+    [Arma 3 installation directory]\\{} => KOLMI_SFCM project folder
+    P:\\{}                              => KOLMI_SFCM project folder
     """.format(FULLDIR,FULLDIR))
     print("\n")
 

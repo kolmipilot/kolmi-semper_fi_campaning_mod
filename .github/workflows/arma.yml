@@ -38,10 +38,10 @@ jobs:
       - name: Run HEMTT Build
         run: hemtt build
       - name: Rename build folder
-        run: mv .hemttout/build .hemttout/@kolmir
+        run: mv .hemttout/build .hemttout/@kolmiSFCM
       - name: Upload Release
         uses: actions/upload-artifact@v4
         with:
-          name: 'kolmir-${{github.sha}}-nobin'
+          name: 'kolmiSFCM-${{github.sha}}-nobin'
           path: '.hemttout/@*'
           include-hidden-files: true # Because .hemttout is a hidden directory

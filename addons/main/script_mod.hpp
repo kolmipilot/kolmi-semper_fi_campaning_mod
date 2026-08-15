@@ -9,7 +9,7 @@
 #define VERSION_STR MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR  MAJOR,MINOR,PATCHLVL,BUILD
 
-#define KOLMI_SFCM_RADIATE_TAG KOLMI_SFCM_RADIATE
+#define KOLMI_SFCM_TAG KOLMI_SFCM
 
 // MINIMAL required version for the Mod. Components can specify others..
 #define REQUIRED_VERSION 2.02
