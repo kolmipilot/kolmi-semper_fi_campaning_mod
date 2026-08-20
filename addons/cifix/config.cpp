@@ -6,8 +6,8 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"kolmiSFCM_main", "CIUSMC_Uniforms", "rhsusf_c_troops", "A3_Characters_F", "CIUSMC_MAW_Vests", "CIUSMC_Vests", "rhsusf_main_loadorder", "ibc_main"};
-        author = "";
+        requiredAddons[] = {"kolmiSFCM_main", "26th_USMC_Uniforms", "rhsusf_c_troops", "A3_Characters_F", "26th_USMC_MAW_Vests", "26th_USMC_Vests", "rhsusf_main_loadorder", "ibc_main"};
+        author = "kolmipilot";
         authors[] = {""};
         VERSION_CONFIG;
     };
