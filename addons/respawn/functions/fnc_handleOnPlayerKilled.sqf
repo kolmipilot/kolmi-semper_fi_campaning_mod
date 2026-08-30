@@ -21,6 +21,10 @@
     private _playerVariable = format ["dAn_Respawn_%1", _uid];
     _playerData = missionNamespace getVariable _playerVariable;
 
+    [[west], [east, resistance, civilian]] call ace_spectator_fnc_updateSides;
+    [[1, 2], [0]] call ace_spectator_fnc_updateCameraModes;
+    [[-2, -1], [0, 1, 2, 3, 4, 5, 6, 7]] call ace_spectator_fnc_updateVisionModes;
+
     _respawnTickets = _playerData select 1;
 
     

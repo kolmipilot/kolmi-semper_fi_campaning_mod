@@ -4,9 +4,9 @@ class CfgMagazines
 };
 class CfgWeapons
 {
-	class Default{};
+	class Default {};
 	class RifleCore: Default {};
-	class InventoryItem_Base_F;
+	class InventoryItem_Base_F {};
 	class ItemCore: Default {};
 	
 

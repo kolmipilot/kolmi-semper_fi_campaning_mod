@@ -37,5 +37,10 @@ workshop = [
 [ciusmc]
 extends = "rhs"
 workshop = [
-    "3623616016" # ciusmc legacy
+    "3787360363" # ciusmc legacy
+]
+[mv22]
+extends = "rhs"
+workshop = [
+    "3354581482" # osprey
 ]
